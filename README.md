@@ -35,12 +35,12 @@ As a System Administrator transitioning into security operations, I created this
 
 | Goal | Status | Description |
 |------|--------|-------------|
-| SIEM Implementation | ✅ Complete | Wazuh deployed with Windows endpoint |
-| Custom Detection Rules | ✅ Complete | 5 rules across 5 MITRE tactics |
-| SOAR Automation | ✅ Complete | n8n workflows for alert processing |
-| Case Management | ✅ Complete | TheHive for incident tracking |
-| Threat Intelligence | ✅ Complete | VirusTotal + AbuseIPDB integration |
-| Penetration Testing | ⏳ Planned | Kali Linux for red team exercises |
+| SIEM Implementation | Complete | Wazuh deployed with Windows endpoint |
+| Custom Detection Rules | Complete | 5 rules across 5 MITRE tactics |
+| SOAR Automation | Complete | n8n workflows for alert processing |
+| Case Management | Complete | TheHive for incident tracking |
+| Threat Intelligence | Complete | VirusTotal + AbuseIPDB integration |
+| Penetration Testing | Planned | Kali Linux for red team exercises |
 
 ---
 
