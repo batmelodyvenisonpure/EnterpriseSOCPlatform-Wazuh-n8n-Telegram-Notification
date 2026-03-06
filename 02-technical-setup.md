@@ -59,5 +59,21 @@ Add to C:\Program Files (x86)\ossec-agent\ossec.conf:
   <log_format>eventchannel</log_format>
 </localfile>
 ```
-#   <log_format>eventchannel</log_format>
+# Step 7: Installing AtomicRedTeam and YAML Parser
+
+First of all, we bypass execution policy for our current session.
+
+```bash
+Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser -Force
+```
+
+Install AtomicRedTeam Framework with Test Definitions
+
+```bash
+Install-AtomicRedTeam -getAtomics -Force
+```
+
+
+
+ <log_format>eventchannel</log_format>
 # </localfile>
