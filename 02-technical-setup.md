@@ -29,7 +29,7 @@ sudo bash ./wazuh-install.sh -a
 sudo nano /var/ossec/etc/rules/local_rules.xml
 ```
 
-## Paste all 5 rules present in creating-rules.md
+Paste all 5 rules present in creating-rules.md
 
 ### Step 3: Restarting Wazuh-Manager Service on Ubuntu Machine in order to apply the changes.
 
