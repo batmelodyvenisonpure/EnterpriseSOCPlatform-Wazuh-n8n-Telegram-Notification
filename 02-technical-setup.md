@@ -10,14 +10,13 @@
 ![MITRE ATT&CK](https://img.shields.io/badge/Framework-MITRE%20ATT%26CK-000000?style=for-the-badge&logo=mitre&logoColor=white)
 ![Atomic Red Team](https://img.shields.io/badge/Testing-Atomic%20Red%20Team-FF6F61?style=for-the-badge&logo=redhat&logoColor=white)
 
-## Prerequisites
+## Virtual Machine Specifications
 
-Before starting the installation, ensure your system meets the following requirements:
-
-- **Operating System**: Ubuntu
-- **RAM**: 8GB
-- **CPU**: 2 cores
-- **Storage**: 50GB
+| VM               | OS           | RAM | CPU Cores | Storage |
+|------------------|--------------|-----|-----------|---------|
+| Wazuh Manager    | Ubuntu 24.04 | 8GB | 2 Cores   | 50GB    |
+| Windows Endpoint | Windows 10   | 8GB | 2 Cores   | 100GB   |
+| n8n/TheHive      | Ubuntu 24.04 | 8GB | 2 Cores   | 50GB    |
 
 ## Installation Process
 
