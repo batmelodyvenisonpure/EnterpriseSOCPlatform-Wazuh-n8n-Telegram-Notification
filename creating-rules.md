@@ -1,5 +1,6 @@
 # Rule 100001 - PowerShell Download Detection (T1059.001)
-xml
+
+```bash
 <group name="execution,powershell,download,custom,">
   <rule id="100001" level="8">
     <if_group>windows|sysmon</if_group>
@@ -11,11 +12,16 @@ xml
     </mitre>
   </rule>
 </group>
+```
+
 What it detects: PowerShell downloading files from the internet (common malware staging technique)
 
-Test Command:
+## Test Command:
 
-powershell
+```bash
+Invoke-AtomicTest T1059.001
+```
+
 powershell -Command "Invoke-WebRequest -Uri 'https://example.com' -OutFile C:\temp\test.txt"
 # Rule 100002 - Mimikatz Credential Dumping (T1003.001)
 xml
