@@ -1,41 +1,26 @@
 ## Network Architecture Overview
 
 ```mermaid
-graph TB
+graph TD
     subgraph "INTERNAL NETWORK (192.168.0.0/24)"
         
-        subgraph WAZUH["WAZUH MANAGER"]
-            style WAZUH fill:#e1f5fe,stroke:#01579b,stroke-width:2px
-            W1["Ubuntu 24.04<br/>192.168.0.177"]
-            W2["• Wazuh Manager<br/>• Wazuh Dashboard<br/>• Custom Rules: 100001-100005"]
-        end
+        WAZUH["🖥️ WAZUH MANAGER<br/>Ubuntu 24.04<br/>192.168.0.177<br/>• Wazuh Manager<br/>• Dashboard<br/>• Rules 100001-100005"]
         
-        subgraph N8N["n8n + AI"]
-            style N8N fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
-            N1["Ubuntu 24.04<br/>192.168.0.185"]
-            N2["• n8n Webhook<br/>• IF Filter (Level 8)<br/>• AI Investigation<br/>• Telegram Bot"]
-        end
+        N8N["⚙️ n8n + AI<br/>Ubuntu 24.04<br/>192.168.0.185<br/>• Webhook<br/>• IF Filter<br/>• AI Analysis<br/>• Telegram Bot"]
         
-        subgraph WIN["WINDOWS ENDPOINT"]
-            style WIN fill:#fff3e0,stroke:#e65100,stroke-width:2px
-            W11["Windows 10<br/>192.168.0.175"]
-            W22["• Wazuh Agent<br/>• Sysmon<br/>• Atomic Red Team<br/>• Detection Tests"]
-        end
+        WIN["💻 WINDOWS ENDPOINT<br/>Windows 10<br/>192.168.0.175<br/>• Wazuh Agent<br/>• Sysmon<br/>• Atomic Red Team"]
         
-        subgraph EXT["EXTERNAL"]
-            style EXT fill:#f5f5f5,stroke:#333,stroke-width:2px
-            TELEGRAM["📱 Telegram<br/>SOC Alerts"]
-        end
-        
-        W11 -->|Port 1514/55000| W1
-        W1 -->|HTTP 5678| N1
-        N1 -->|HTTPS 443| TELEGRAM
-        
-        W1 <-.-> W11
-        
+        WIN -->|"Port 1514/55000"| WAZUH
+        WAZUH -->|"HTTP 5678"| N8N
     end
     
-    classDef default fill:#f9f9f9,stroke:#333,stroke-width:1px;
+    TELEGRAM["📱 TELEGRAM<br/>External API"]
+    N8N -->|"HTTPS 443"| TELEGRAM
+    
+    style WAZUH fill:#d4e6f1,stroke:#2875a2,stroke-width:2px
+    style N8N fill:#d5e8d4,stroke:#82b366,stroke-width:2px
+    style WIN fill:#ffe6cc,stroke:#d79b00,stroke-width:2px
+    style TELEGRAM fill:#f5f5f5,stroke:#666,stroke-width:2px,stroke-dasharray: 5 5
 ```
 
 **Note**: Kali Linux will be implemented in a future phase as part of a dedicated penetration testing project.
