@@ -12,9 +12,9 @@
 
 ## Project Overview
 
-A complete **Security Operations Center (SOC) platform** built from scratch that simulates a real-world enterprise security environment. This project demonstrates my ability to deploy, configure, and automate security operations using industry-standard tools and frameworks.
+A complete Security Operations Center (SOC) platform built from scratch that simulates a real-world enterprise security environment. This project demonstrates my ability to deploy, configure, and automate security operations using industry-standard tools with AI-powered alert triage and instant Telegram notifications.
 
-The platform integrates **SIEM, SOAR, and Case Management** capabilities with **5 custom detection rules** mapped to the MITRE ATT&CK framework, all automated through n8n workflows.
+The platform integrates SIEM and SOAR capabilities with 5 custom detection rules mapped to the MITRE ATT&CK framework, all automated through n8n workflows with OpenAI-powered analysis and real-time Telegram alerts.
 
 ---
 
@@ -38,8 +38,8 @@ As a IT Administrator transitioning into security, I created this project to:
 | SIEM Implementation | Complete | Wazuh deployed with Windows endpoint |
 | Custom Detection Rules | Complete | 5 rules across 5 MITRE tactics |
 | SOAR Automation | Complete | n8n workflows for alert processing |
-| Case Management | Complete | TheHive for incident tracking |
-| Threat Intelligence | Complete | VirusTotal + AbuseIPDB integration |
+| Telegram Integration | Complete | Real-time alerts to SOC channel |
+| AI-Powered Triage | Complete | DeepSeek-V3.2 generates context-rich reports |
 | Penetration Testing | Planned | Kali Linux for red team exercises |
 
 ---
@@ -51,9 +51,9 @@ As a IT Administrator transitioning into security, I created this project to:
 | **Custom Detection Rules** | 5 rules mapped to MITRE ATT&CK |
 | **MITRE Tactics Covered** | Execution, Credential Access, Defense Evasion, Persistence, C2 |
 | **SOAR Workflows** | 5 automated n8n workflows |
-| **Incident Management** | TheHive case creation and tracking |
-| **Threat Intelligence** | VirusTotal and AbuseIPDB integration |
-| **Response Time** | < 5 seconds from alert to notification |
+| **Alert Triage** | DeepSeek-V3.2 generates context-rich reports |
+| **Response Time** | < 3 seconds from alert to Telegram notification |
+| **Noise Reduction** | Smart severity filtering eliminates alert fatigue |
 
 ---
 
@@ -64,8 +64,8 @@ As a IT Administrator transitioning into security, I created this project to:
 | **SIEM** | Wazuh (Manager, Agent, Dashboard) |
 | **Endpoint Security** | Sysmon, Windows Event Logs |
 | **SOAR/Automation** | n8n |
-| **Case Management** | TheHive |
-| **Threat Intelligence** | VirusTotal API, AbuseIPDB API |
+| **AI Analysis** | DeepSeek-V3.2 (custom SOC prompts) |
+| **Notifications** | Telegram Bot API |
 | **Attack Simulation** | Atomic Red Team, MITRE ATT&CK |
 | **Operating Systems** | Ubuntu 24.04, Windows 10, Kali Linux (planned) |
 | **Virtualization** | Proxmox Virtual Environment|
