@@ -1,4 +1,4 @@
-# Enterprise SOC Platform: Wazuh + n8n + TheHive
+# Enterprise SOC Platform: Wazuh + n8n + Telegram Notification
 ![Proxmox](https://img.shields.io/badge/Hypervisor-Proxmox-E57000?style=for-the-badge&logo=proxmox&logoColor=white)
 ![Wazuh](https://img.shields.io/badge/SIEM-Wazuh-005571?style=for-the-badge&logo=wazuh&logoColor=white)
 ![TheHive](https://img.shields.io/badge/Case%20Management-TheHive-FF6C37?style=for-the-badge&logo=thehive&logoColor=white)
